@@ -5,6 +5,9 @@ import QuestionCard from './Components/QuestionCard/QuestionCard'
 // Types
 import { QuestionsState, Difficulity } from './API';
 
+// Styled
+import {Wrapper } from './App.styles';
+
 
 export type AnswerObject = {
   question: string;
@@ -78,7 +81,8 @@ const App = () => {
   }
   return (
     <>
-      <div className='App'>
+     
+      <Wrapper className='App'>
           <h1>React Quiz</h1>
           {
             gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
@@ -111,7 +115,7 @@ const App = () => {
             ): null}
           
           
-      </div>
+      </Wrapper>
     </>
   )
 }

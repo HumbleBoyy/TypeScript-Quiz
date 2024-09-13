@@ -4,7 +4,21 @@
   box-sizing: border-box;
   font-family: "Kanit", sans-serif;
 }
-
-/* html{
+body {
+  background-image: url(./images/smart.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+html{
   font-size: 62.5%;
-} */
+}
+
+p, span, h1, button{
+  font-size: 3rem;
+}
