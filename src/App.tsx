@@ -83,7 +83,6 @@ const App = () => {
   }
   return (
     <>
-     
       <Wrapper className='App'>
           <h1 className='title'>Random Quiz</h1>
           {
