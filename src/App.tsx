@@ -5,8 +5,10 @@ import QuestionCard from './Components/QuestionCard/QuestionCard'
 // Types
 import { QuestionsState, Difficulity } from './API';
 
+
 // Styled
 import {Wrapper } from './App.styles';
+import { PacmanLoader, RingLoader, ScaleLoader } from 'react-spinners';
 
 
 export type AnswerObject = {
@@ -83,7 +85,7 @@ const App = () => {
     <>
      
       <Wrapper className='App'>
-          <h1>React Quiz</h1>
+          <h1 className='title'>Random Quiz</h1>
           {
             gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
                 <button className='start' onClick={startQuiz}>Start</button>
@@ -92,7 +94,13 @@ const App = () => {
           {
             !gameOver ? <p className='score'>{score}</p> : null
           }
-          {loading ? <p>Loading...</p> : null}
+          {loading ?<ScaleLoader
+                  color="#ffffff"
+                  height={50}
+                  margin={1}
+                  radius={20}
+                  width={30}
+                /> : null}
 
           {!loading && !gameOver && (
              <>

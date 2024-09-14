@@ -5,7 +5,7 @@
   font-family: "Kanit", sans-serif;
 }
 body {
-  background-image: url(./images/smart.jpg);
+  background-image: url(./images/philip-oroni-XUN5hmHL0AI-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -19,6 +19,74 @@ html{
   font-size: 62.5%;
 }
 
-p, span, h1, button{
-  font-size: 3rem;
+.warpper{
+  margin-top: 2rem;
+  max-width: 1100px;
+  background: #000000;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.25);
+  text-align: center;
+  color: aliceblue;
+}
+
+.title{
+  background-image: linear-gradient(180deg, #fdfdfd, #000000);
+  font-weight: 400;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px #0085a3);
+  font-size: 7rem;
+  text-align: center;
+  margin: 20px;
+  color: aliceblue;
+}
+
+.score {
+  background: #000000;
+  width: 200px;
+  font-size: 5rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+.paragraph, .options{
+  font-size: 2rem;
+}
+.start, .next {
+  cursor: pointer;
+  background: linear-gradient(180deg, #cdcdcd, #0062ff);
+  border: 2px solid #0062ff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: aliceblue;
+  height: 40px;
+  margin: 30px 0;
+  font-size: 2rem;
+  padding: 0 50px;
+}
+
+
+@media (max-width:415px){
+  .warpper{
+    width: 100%;
+  }
+  .title{
+    font-size: 5rem;
+  }
+}
+
+@media (max-width:376px){
+  .title{
+    font-size: 4rem;
+  }
+  .paragraph, .options{
+    font-size: 2rem;
+  }
 }

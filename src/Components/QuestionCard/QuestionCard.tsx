@@ -22,7 +22,7 @@ const QuestionCard: React.FC<Props> = ({
   questionNumber,
   totalQuestions,
 }) => (
-  <Wrapper>
+  <Wrapper className='warpper'>
     <p className='number paragraph'>
       Question: {questionNumber} / {totalQuestions}
     </p>
@@ -33,8 +33,8 @@ const QuestionCard: React.FC<Props> = ({
           $correct={userAnswer?.correctAnswer === answer}
           $userClicked={userAnswer?.answer === answer}
         >
-          <button disabled={userAnswer ? true : false} value={answer} onClick={callback}>
-            <span dangerouslySetInnerHTML={{ __html: answer }} />
+          <button disabled={userAnswer ? true : false} value={answer} onClick={callback} className='question_wrapper'>
+            <span dangerouslySetInnerHTML={{ __html: answer }} className='options'/>
           </button>
         </ButtonWrapper>
       ))}
