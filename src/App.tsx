@@ -91,7 +91,7 @@ const App = () => {
             ) : null}
           
           {
-            !gameOver ? <p className='score'>{score}</p> : null
+            !gameOver ? <p className='score'>Right Answer: {score}</p> : null
           }
           {loading ?<ScaleLoader
                   color="#ffffff"
