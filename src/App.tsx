@@ -8,7 +8,7 @@ import { QuestionsState, Difficulity } from './API';
 
 // Styled
 import {Wrapper } from './App.styles';
-import { PacmanLoader, RingLoader, ScaleLoader } from 'react-spinners';
+import {ScaleLoader } from 'react-spinners';
 
 
 export type AnswerObject = {
